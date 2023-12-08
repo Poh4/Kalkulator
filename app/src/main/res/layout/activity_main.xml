@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/editpertama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/editkedua"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/spinerOperasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/prosesList"/>
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btnHitung"
+        android:onClick="@string/buttonHandler"/>
+
+
+</LinearLayout>
